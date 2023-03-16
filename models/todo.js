@@ -35,10 +35,10 @@ function destroy(id){
 }
 
 function update(id, todo){
-    // provide the function an id and a todo paramater
-    // id = parseInt(id)
-    // const updatedTodo = todos.findIndex(todo=>todo.id === id)
-    // todos.spread()
+    //provide the function an id and a todo paramater
+    id = parseInt(id)
+    const idx = todos.findIndex(todo=>todo.id === id)
+    const updatedTodo = {...idx}
 
 
     // parse the id into an integer

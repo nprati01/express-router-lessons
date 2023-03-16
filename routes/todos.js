@@ -16,7 +16,7 @@ router.post('/', todosCtrl.create)
 router.delete('/:id', todosCtrl.deleteOne)
 
 // create a put route with the path `/:id` that runs the update controller function
-// router.put('/:id', todosCtrl.updateOne)
+router.put('/:id', todosCtrl.update)
 
 module.exports = router
 
