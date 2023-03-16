@@ -1,0 +1,8 @@
+<%- include('./partials/header') %>
+    <% const welcome = title.split(' | ') %>
+    <h1><%= welcome[1] %></h1>
+    <p>Welcome to <%= welcome[0] %></p>
+    <div>
+        <a href="/todos">To-Do List</a>
+    </div>
+<%- include('./partials/footer') %>

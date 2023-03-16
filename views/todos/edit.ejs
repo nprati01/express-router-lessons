@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<h1> <%= title %> </h1>
+
+
+
+<h2>Update Todo</h2>
+<form action="/todos/" method="PUT" autocomplete="off">
+  <input type="text" name="todo"> value='<%=todo.todo%>'
+
+  <button type="submit">Edit Todo</button>
+</form>
+
+<%- include('../partials/footer') %>
