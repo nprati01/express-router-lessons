@@ -4,7 +4,7 @@
 
 
 <h2>Update Todo</h2>
-<form action="/todos/" method="PUT" autocomplete="off">
+<form action="/todos/<%=todo.id%>?_method=PUT" method="POST" autocomplete="off">
   <input type="text" name="todo" value="<%=todo.todo%>" >
 
   <input type="submit" onclick="history.back()" value="Save Todo">
